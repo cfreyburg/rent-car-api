@@ -78,7 +78,6 @@ bookReferenceNumber - Located in route
 
 ### Aditional Information ###
 
-* A new branch need to be created to develop the app, please create it with your name and surname e.g john-willyan
 * Kestrel must be used as host service
 * Repository data can be stored in memory
 * Must be created a unit test for api controller
