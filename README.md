@@ -1,11 +1,11 @@
 ### Proposed Exercise: ###
 
-The company BestCar Rental Services needs to provide a webapi with basic rental operations. A rest service need to be created based in the list of requirements below.
+The company BestCar Rental Services needs to provide a webapi with basic rental operations. A REST service must to be created based in the list of requirements below.
 
 ### Paths: ###
 
 **Summary**
-Return a list of all cars provided by company.
+Return a list of all cars provided by company, this object can used as mock.
 
 **[GET]** /cars
 
