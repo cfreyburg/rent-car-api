@@ -58,7 +58,7 @@ Cancel an already created reservation.
 
 **[DELETE]** /book/{bookReferenceNumber}/cancel
 
-**Parameter**
+**Request**
 
 bookReferenceNumber - Located in route
 
