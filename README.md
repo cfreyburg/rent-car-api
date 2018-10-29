@@ -85,3 +85,4 @@ bookReferenceNumber - Located in route
 * Dependency Injection must be used to fill api controller dependencies
 * Json objects must to be Camel Case
 * Abstractions layer must be used as reference domain (no changes allowed)
+* Suggestion: Use Postman to call the service and import the project for execution
