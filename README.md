@@ -5,7 +5,7 @@ The company BestCar Rental Services needs to provide a webapi with basic rental 
 ### Paths: ###
 
 **Summary**
-Return a list of all cars provided by company, this object can used as mock.
+Return a list of all cars provided by company, this object can be used as mock.
 
 **[GET]** /cars
 
