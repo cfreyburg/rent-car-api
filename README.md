@@ -9,11 +9,11 @@ Return a list of all cars provided by company, this object can be used as mock.
 
 **[GET]** /cars
 
-**Parameters**
+**Request**
 
 N/A
 
-**Responses**
+**Response**
 
 200 - List of all company cars
 
@@ -24,11 +24,11 @@ Return a list of all registered reservations.
 
 **[GET]** /reservations
 
-**Parameters**
+**Request**
 
 N/A
 
-**Responses**
+**Response**
 
 200 - List of all registered reservations
 
@@ -39,11 +39,11 @@ Makes new book with Car, Drive and Booking information.
 
 **[POST]** /book
 
-**Parameters**
+**Request**
 
 Book - Located in body
 
-**Responses**
+**Response**
 
 200 - Book created
 
@@ -58,11 +58,11 @@ Cancel an already created reservation.
 
 **[DELETE]** /book/{bookReferenceNumber}/cancel
 
-**Parameters**
+**Parameter**
 
 bookReferenceNumber - Located in route
 
-**Responses**
+**Response**
 
 200 - Reservation has been canceled
 
@@ -78,11 +78,10 @@ bookReferenceNumber - Located in route
 
 ### Aditional Information ###
 
-* Kestrel must be used as host service
 * Repository data can be stored in memory
 * Must be created a unit test for api controller
+* Must generate a test coverage report
 * Set api default route as http://[ip]:[port]/ e.g localhost:80/book
 * Dependency Injection must be used to fill api controller dependencies
 * Json objects must to be Camel Case
-* Json enumerables must to be handled as string
-* Abstractions layer must be used as reference domain
+* Abstractions layer must be used as reference domain (no changes allowed)
