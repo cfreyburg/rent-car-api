@@ -78,8 +78,9 @@ bookReferenceNumber - Located in route
 
 ### Aditional Information ###
 
+* The project  must to be separated in logic layers such as (Controller, Service, Repository, Abstraction)
 * Repository data can be stored in memory
-* Must be created a unit test for api controller
+* Must be created a unit test for Controller and Service layers
 * Must generate a test coverage report
 * Set api default route as http://[ip]:[port]/ e.g localhost:80/book
 * Dependency Injection must be used to fill api controller dependencies
