@@ -1,12 +1,14 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
+﻿using Cinq.RentCar.Abstractions.Models;
+using Cinq.RentCar.Abstractions.Repositories;
+using Cinq.RentCar.Abstractions.Services;
+using Cinq.RentCar.Repositories;
+using Cinq.RentCar.Services;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Logging;
+
 
 namespace Cinq.RentCar.Controllers
 {
@@ -36,8 +38,12 @@ namespace Cinq.RentCar.Controllers
         {
             // Add framework services.
             services.AddApplicationInsightsTelemetry(Configuration);
-
+            
             services.AddMvc();
+
+            services.AddScoped<IRentService, RentService>();
+            services.AddScoped<IRentRepository, RentRepository>();
+            services.AddScoped<IRepository, Repository>();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline

@@ -10,7 +10,7 @@
         "dependencies": {
           "Cinq.RentCar.Abstractions": "1.0.0",
           "Cinq.RentCar.Repositories": "1.0.0",
-          "Cinq.RentCar.Services": "1.0.0",
+          "Cinq.RentCar.Service": "1.0.0",
           "MSTest.TestAdapter": "1.3.2",
           "MSTest.TestFramework": "1.3.2",
           "Microsoft.NET.Test.Sdk": "15.8.0",
@@ -1072,12 +1072,12 @@
           "Cinq.RentCar.Repositories.dll": {}
         }
       },
-      "Cinq.RentCar.Services/1.0.0": {
+      "Cinq.RentCar.Service/1.0.0": {
         "dependencies": {
           "Cinq.RentCar.Abstractions": "1.0.0"
         },
         "runtime": {
-          "Cinq.RentCar.Services.dll": {}
+          "Cinq.RentCar.Service.dll": {}
         }
       }
     }
@@ -1616,7 +1616,7 @@
       "serviceable": false,
       "sha512": ""
     },
-    "Cinq.RentCar.Services/1.0.0": {
+    "Cinq.RentCar.Service/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""

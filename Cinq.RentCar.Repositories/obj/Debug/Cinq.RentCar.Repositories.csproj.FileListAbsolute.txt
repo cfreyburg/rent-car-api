@@ -1,0 +1,9 @@
+C:\Users\Xto\Documents\projetos\rental-car\rent-car-api\Cinq.RentCar.Repositories\obj\Debug\Cinq.RentCar.Repositories.csprojAssemblyReference.cache
+C:\Users\Xto\Documents\projetos\rental-car\rent-car-api\Cinq.RentCar.Repositories\obj\Debug\Cinq.RentCar.Repositories.csproj.CoreCompileInputs.cache
+C:\Users\Xto\Documents\projetos\rental-car\rent-car-api\Cinq.RentCar.Repositories\bin\Debug\Cinq.RentCar.Repositories.dll
+C:\Users\Xto\Documents\projetos\rental-car\rent-car-api\Cinq.RentCar.Repositories\bin\Debug\Cinq.RentCar.Repositories.pdb
+C:\Users\Xto\Documents\projetos\rental-car\rent-car-api\Cinq.RentCar.Repositories\bin\Debug\Cinq.RentCar.Abstractions.dll
+C:\Users\Xto\Documents\projetos\rental-car\rent-car-api\Cinq.RentCar.Repositories\bin\Debug\Cinq.RentCar.Abstractions.pdb
+C:\Users\Xto\Documents\projetos\rental-car\rent-car-api\Cinq.RentCar.Repositories\obj\Debug\Cinq.RentCar.Repositories.csproj.CopyComplete
+C:\Users\Xto\Documents\projetos\rental-car\rent-car-api\Cinq.RentCar.Repositories\obj\Debug\Cinq.RentCar.Repositories.dll
+C:\Users\Xto\Documents\projetos\rental-car\rent-car-api\Cinq.RentCar.Repositories\obj\Debug\Cinq.RentCar.Repositories.pdb

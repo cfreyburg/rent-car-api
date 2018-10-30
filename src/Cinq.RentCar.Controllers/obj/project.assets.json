@@ -1550,6 +1550,30 @@
         "runtime": {
           "bin/placeholder/Cinq.RentCar.Abstractions.dll": {}
         }
+      },
+      "Cinq.RentCar.Repositories/1.0.0": {
+        "type": "project",
+        "dependencies": {
+          "Cinq.RentCar.Abstractions": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/Cinq.RentCar.Repositories.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Cinq.RentCar.Repositories.dll": {}
+        }
+      },
+      "Cinq.RentCar.Service/1.0.0": {
+        "type": "project",
+        "dependencies": {
+          "Cinq.RentCar.Abstractions": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/Cinq.RentCar.Service.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Cinq.RentCar.Service.dll": {}
+        }
       }
     },
     ".NETFramework,Version=v4.5.2/win7-x86": {
@@ -3059,6 +3083,30 @@
         },
         "runtime": {
           "bin/placeholder/Cinq.RentCar.Abstractions.dll": {}
+        }
+      },
+      "Cinq.RentCar.Repositories/1.0.0": {
+        "type": "project",
+        "dependencies": {
+          "Cinq.RentCar.Abstractions": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/Cinq.RentCar.Repositories.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Cinq.RentCar.Repositories.dll": {}
+        }
+      },
+      "Cinq.RentCar.Service/1.0.0": {
+        "type": "project",
+        "dependencies": {
+          "Cinq.RentCar.Abstractions": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/Cinq.RentCar.Service.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Cinq.RentCar.Service.dll": {}
         }
       }
     }
@@ -5852,11 +5900,23 @@
       "type": "project",
       "path": "../../Cinq.RentCar.Abstractions/Cinq.RentCar.Abstractions.csproj",
       "msbuildProject": "../../Cinq.RentCar.Abstractions/Cinq.RentCar.Abstractions.csproj"
+    },
+    "Cinq.RentCar.Repositories/1.0.0": {
+      "type": "project",
+      "path": "../../Cinq.RentCar.Repositories/Cinq.RentCar.Repositories.csproj",
+      "msbuildProject": "../../Cinq.RentCar.Repositories/Cinq.RentCar.Repositories.csproj"
+    },
+    "Cinq.RentCar.Service/1.0.0": {
+      "type": "project",
+      "path": "../../Cinq.RentCar.Service/Cinq.RentCar.Service.csproj",
+      "msbuildProject": "../../Cinq.RentCar.Service/Cinq.RentCar.Service.csproj"
     }
   },
   "projectFileDependencyGroups": {
     ".NETFramework,Version=v4.5.2": [
       "Cinq.RentCar.Abstractions >= 1.0.0",
+      "Cinq.RentCar.Repositories >= 1.0.0",
+      "Cinq.RentCar.Service >= 1.0.0",
       "Microsoft.ApplicationInsights.AspNetCore >= 1.0.0",
       "Microsoft.AspNetCore.Mvc >= 1.0.3",
       "Microsoft.AspNetCore.Routing >= 1.0.3",
@@ -5903,6 +5963,12 @@
           "projectReferences": {
             "C:\\Users\\Xto\\Documents\\projetos\\rental-car\\rent-car-api\\Cinq.RentCar.Abstractions\\Cinq.RentCar.Abstractions.csproj": {
               "projectPath": "C:\\Users\\Xto\\Documents\\projetos\\rental-car\\rent-car-api\\Cinq.RentCar.Abstractions\\Cinq.RentCar.Abstractions.csproj"
+            },
+            "C:\\Users\\Xto\\Documents\\projetos\\rental-car\\rent-car-api\\Cinq.RentCar.Repositories\\Cinq.RentCar.Repositories.csproj": {
+              "projectPath": "C:\\Users\\Xto\\Documents\\projetos\\rental-car\\rent-car-api\\Cinq.RentCar.Repositories\\Cinq.RentCar.Repositories.csproj"
+            },
+            "C:\\Users\\Xto\\Documents\\projetos\\rental-car\\rent-car-api\\Cinq.RentCar.Service\\Cinq.RentCar.Service.csproj": {
+              "projectPath": "C:\\Users\\Xto\\Documents\\projetos\\rental-car\\rent-car-api\\Cinq.RentCar.Service\\Cinq.RentCar.Service.csproj"
             }
           }
         }

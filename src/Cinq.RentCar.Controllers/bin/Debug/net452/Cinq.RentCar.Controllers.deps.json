@@ -25,6 +25,8 @@
       "Cinq.RentCar.Controllers/1.0.0": {
         "dependencies": {
           "Cinq.RentCar.Abstractions": "1.0.0",
+          "Cinq.RentCar.Repositories": "1.0.0",
+          "Cinq.RentCar.Service": "1.0.0",
           "Microsoft.ApplicationInsights.AspNetCore": "1.0.0",
           "Microsoft.AspNetCore.Mvc": "1.0.3",
           "Microsoft.AspNetCore.Routing": "1.0.3",
@@ -1319,12 +1321,30 @@
         "compile": {
           "Cinq.RentCar.Abstractions.dll": {}
         }
+      },
+      "Cinq.RentCar.Repositories/1.0.0": {
+        "dependencies": {
+          "Cinq.RentCar.Abstractions": "1.0.0"
+        },
+        "compile": {
+          "Cinq.RentCar.Repositories.dll": {}
+        }
+      },
+      "Cinq.RentCar.Service/1.0.0": {
+        "dependencies": {
+          "Cinq.RentCar.Abstractions": "1.0.0"
+        },
+        "compile": {
+          "Cinq.RentCar.Service.dll": {}
+        }
       }
     },
     ".NETFramework,Version=v4.5.2/win7-x86": {
       "Cinq.RentCar.Controllers/1.0.0": {
         "dependencies": {
           "Cinq.RentCar.Abstractions": "1.0.0",
+          "Cinq.RentCar.Repositories": "1.0.0",
+          "Cinq.RentCar.Service": "1.0.0",
           "Microsoft.ApplicationInsights.AspNetCore": "1.0.0",
           "Microsoft.AspNetCore.Mvc": "1.0.3",
           "Microsoft.AspNetCore.Routing": "1.0.3",
@@ -2297,6 +2317,22 @@
         "runtime": {
           "Cinq.RentCar.Abstractions.dll": {}
         }
+      },
+      "Cinq.RentCar.Repositories/1.0.0": {
+        "dependencies": {
+          "Cinq.RentCar.Abstractions": "1.0.0"
+        },
+        "runtime": {
+          "Cinq.RentCar.Repositories.dll": {}
+        }
+      },
+      "Cinq.RentCar.Service/1.0.0": {
+        "dependencies": {
+          "Cinq.RentCar.Abstractions": "1.0.0"
+        },
+        "runtime": {
+          "Cinq.RentCar.Service.dll": {}
+        }
       }
     }
   },
@@ -3098,6 +3134,16 @@
       "hashPath": "system.threading.tasks.extensions.4.0.0.nupkg.sha512"
     },
     "Cinq.RentCar.Abstractions/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Cinq.RentCar.Repositories/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Cinq.RentCar.Service/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""

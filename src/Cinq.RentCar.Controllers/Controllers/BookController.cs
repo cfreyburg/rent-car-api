@@ -1,4 +1,5 @@
 ﻿using Cinq.RentCar.Abstractions.Models;
+using Cinq.RentCar.Abstractions.Services;
 using Microsoft.AspNetCore.Mvc;
 using System;
 using System.Collections.Generic;
@@ -9,17 +10,22 @@ namespace Cinq.RentCar.Controllers.Controllers
 {
     public class BookController : Controller
     {
-        [HttpPost]
-        //public IBook Post(IBook book)
-        public void Post()
+        private readonly IRentService _service;
+        public BookController(IRentService service)
         {
-            //return _logic.Add(book);
+            _service = service;
+        }
+
+        [HttpPost]
+        public void Post(IBook book)
+        {
+            _service.Book(book);
         }
 
         [HttpDelete("{referenceNumber}/cancel")]
-        public void Delete(int referenceNumber)
+        public void Delete(string referenceNumber)
         {
-            //_logic.Delete(book);
+            _service.CancelReservation(referenceNumber);
         }
     }
 }

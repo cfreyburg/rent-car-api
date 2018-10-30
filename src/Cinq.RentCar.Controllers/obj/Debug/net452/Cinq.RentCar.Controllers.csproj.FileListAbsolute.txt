@@ -100,3 +100,7 @@ C:\Users\Xto\Documents\projetos\rental-car\rent-car-api\src\Cinq.RentCar.Control
 C:\Users\Xto\Documents\projetos\rental-car\rent-car-api\src\Cinq.RentCar.Controllers\obj\Debug\net452\Cinq.RentCar.Controllers.pdb
 C:\Users\Xto\Documents\projetos\rental-car\rent-car-api\src\Cinq.RentCar.Controllers\bin\Debug\net452\Cinq.RentCar.Abstractions.dll
 C:\Users\Xto\Documents\projetos\rental-car\rent-car-api\src\Cinq.RentCar.Controllers\bin\Debug\net452\Cinq.RentCar.Abstractions.pdb
+C:\Users\Xto\Documents\projetos\rental-car\rent-car-api\src\Cinq.RentCar.Controllers\bin\Debug\net452\Cinq.RentCar.Repositories.dll
+C:\Users\Xto\Documents\projetos\rental-car\rent-car-api\src\Cinq.RentCar.Controllers\bin\Debug\net452\Cinq.RentCar.Service.dll
+C:\Users\Xto\Documents\projetos\rental-car\rent-car-api\src\Cinq.RentCar.Controllers\bin\Debug\net452\Cinq.RentCar.Repositories.pdb
+C:\Users\Xto\Documents\projetos\rental-car\rent-car-api\src\Cinq.RentCar.Controllers\bin\Debug\net452\Cinq.RentCar.Service.pdb

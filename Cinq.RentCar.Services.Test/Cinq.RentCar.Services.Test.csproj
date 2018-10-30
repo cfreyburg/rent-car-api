@@ -16,7 +16,7 @@
   <ItemGroup>
     <ProjectReference Include="..\Cinq.RentCar.Abstractions\Cinq.RentCar.Abstractions.csproj" />
     <ProjectReference Include="..\Cinq.RentCar.Repositories\Cinq.RentCar.Repositories.csproj" />
-    <ProjectReference Include="..\Cinq.RentCar.Service\Cinq.RentCar.Services.csproj" />
+    <ProjectReference Include="..\Cinq.RentCar.Service\Cinq.RentCar.Service.csproj" />
   </ItemGroup>
 
 </Project>
