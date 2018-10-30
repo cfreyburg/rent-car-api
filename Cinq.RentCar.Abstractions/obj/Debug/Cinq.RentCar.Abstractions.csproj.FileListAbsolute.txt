@@ -1,5 +1,6 @@
 C:\Users\Xto\Documents\projetos\rental-car\rent-car-api\Cinq.RentCar.Abstractions\bin\Debug\Cinq.RentCar.Abstractions.dll
 C:\Users\Xto\Documents\projetos\rental-car\rent-car-api\Cinq.RentCar.Abstractions\bin\Debug\Cinq.RentCar.Abstractions.pdb
-C:\Users\Xto\Documents\projetos\rental-car\rent-car-api\Cinq.RentCar.Abstractions\obj\Debug\Cinq.RentCar.Abstractions.csprojResolveAssemblyReference.cache
 C:\Users\Xto\Documents\projetos\rental-car\rent-car-api\Cinq.RentCar.Abstractions\obj\Debug\Cinq.RentCar.Abstractions.dll
 C:\Users\Xto\Documents\projetos\rental-car\rent-car-api\Cinq.RentCar.Abstractions\obj\Debug\Cinq.RentCar.Abstractions.pdb
+C:\Users\Xto\Documents\projetos\rental-car\rent-car-api\Cinq.RentCar.Abstractions\obj\Debug\Cinq.RentCar.Abstractions.csprojAssemblyReference.cache
+C:\Users\Xto\Documents\projetos\rental-car\rent-car-api\Cinq.RentCar.Abstractions\obj\Debug\Cinq.RentCar.Abstractions.csproj.CoreCompileInputs.cache

@@ -207,6 +207,15 @@
         "build": {
           "build/netstandard2.0/NETStandard.Library.targets": {}
         }
+      },
+      "Cinq.RentCar.Abstractions/1.0.0": {
+        "type": "project",
+        "compile": {
+          "bin/placeholder/Cinq.RentCar.Abstractions.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Cinq.RentCar.Abstractions.dll": {}
+        }
       }
     }
   },
@@ -673,10 +682,16 @@
         "netstandard.library.2.0.3.nupkg.sha512",
         "netstandard.library.nuspec"
       ]
+    },
+    "Cinq.RentCar.Abstractions/1.0.0": {
+      "type": "project",
+      "path": "../Cinq.RentCar.Abstractions/Cinq.RentCar.Abstractions.csproj",
+      "msbuildProject": "../Cinq.RentCar.Abstractions/Cinq.RentCar.Abstractions.csproj"
     }
   },
   "projectFileDependencyGroups": {
     ".NETCoreApp,Version=v2.1": [
+      "Cinq.RentCar.Abstractions >= 1.0.0",
       "Microsoft.NETCore.App >= 2.1.0"
     ]
   },
@@ -709,7 +724,11 @@
       },
       "frameworks": {
         "netcoreapp2.1": {
-          "projectReferences": {}
+          "projectReferences": {
+            "C:\\Users\\Xto\\Documents\\projetos\\rental-car\\rent-car-api\\Cinq.RentCar.Abstractions\\Cinq.RentCar.Abstractions.csproj": {
+              "projectPath": "C:\\Users\\Xto\\Documents\\projetos\\rental-car\\rent-car-api\\Cinq.RentCar.Abstractions\\Cinq.RentCar.Abstractions.csproj"
+            }
+          }
         }
       },
       "warningProperties": {

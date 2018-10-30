@@ -1,0 +1,36 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v2.1",
+    "signature": "da39a3ee5e6b4b0d3255bfef95601890afd80709"
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v2.1": {
+      "Cinq.RentCar.Services/1.0.0": {
+        "dependencies": {
+          "Cinq.RentCar.Abstractions": "1.0.0"
+        },
+        "runtime": {
+          "Cinq.RentCar.Services.dll": {}
+        }
+      },
+      "Cinq.RentCar.Abstractions/1.0.0": {
+        "runtime": {
+          "Cinq.RentCar.Abstractions.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "Cinq.RentCar.Services/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Cinq.RentCar.Abstractions/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

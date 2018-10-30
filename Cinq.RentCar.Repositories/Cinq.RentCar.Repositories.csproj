@@ -4,4 +4,8 @@
     <TargetFramework>netcoreapp2.1</TargetFramework>
   </PropertyGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\Cinq.RentCar.Abstractions\Cinq.RentCar.Abstractions.csproj" />
+  </ItemGroup>
+
 </Project>
