@@ -98,3 +98,5 @@ C:\Users\Xto\Documents\projetos\rental-car\rent-car-api\src\Cinq.RentCar.Control
 C:\Users\Xto\Documents\projetos\rental-car\rent-car-api\src\Cinq.RentCar.Controllers\obj\Debug\net452\Cinq.RentCar.Controllers.csproj.CopyComplete
 C:\Users\Xto\Documents\projetos\rental-car\rent-car-api\src\Cinq.RentCar.Controllers\obj\Debug\net452\Cinq.RentCar.Controllers.exe
 C:\Users\Xto\Documents\projetos\rental-car\rent-car-api\src\Cinq.RentCar.Controllers\obj\Debug\net452\Cinq.RentCar.Controllers.pdb
+C:\Users\Xto\Documents\projetos\rental-car\rent-car-api\src\Cinq.RentCar.Controllers\bin\Debug\net452\Cinq.RentCar.Abstractions.dll
+C:\Users\Xto\Documents\projetos\rental-car\rent-car-api\src\Cinq.RentCar.Controllers\bin\Debug\net452\Cinq.RentCar.Abstractions.pdb

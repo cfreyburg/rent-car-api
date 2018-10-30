@@ -35,4 +35,8 @@
     <Reference Include="Microsoft.CSharp" />
   </ItemGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\..\Cinq.RentCar.Abstractions\Cinq.RentCar.Abstractions.csproj" />
+  </ItemGroup>
+
 </Project>
