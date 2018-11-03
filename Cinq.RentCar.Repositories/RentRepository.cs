@@ -31,9 +31,14 @@ namespace Cinq.RentCar.Repositories
             return _repository.Books.Where(q => q.BookReference == bookReferenceNumber).FirstOrDefault();
         }
 
-        public ICar[] GetAvailableCars()
+        public ICar[] GetAllCars()
         {
             return _repository.Cars.ToArray();
+        }
+
+        public ICar[] GetRentedCars()
+        {
+            return _repository.Books.Where(q => q.DropoffDate < DateTime.Now).Select(q => q.Car).ToArray();
         }
 
         public IBook[] GetReservations()

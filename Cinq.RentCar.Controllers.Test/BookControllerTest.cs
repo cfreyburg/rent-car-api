@@ -26,5 +26,15 @@ namespace Cinq.RentCar.Controllers.Test
 
             _service.Verify(q => q.Book(book), Times.Once);
         }
+
+        [TestMethod]
+        public void controller_should_delete()
+        {
+            var referenceNumber = "1234";
+            _controller.Delete(referenceNumber);
+
+            _service.Verify(q => q.CancelReservation(referenceNumber));
+
+        }
     }
 }

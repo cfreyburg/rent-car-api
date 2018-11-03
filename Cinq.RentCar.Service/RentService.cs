@@ -1,7 +1,7 @@
 ﻿using Cinq.RentCar.Abstractions.Models;
 using Cinq.RentCar.Abstractions.Repositories;
 using Cinq.RentCar.Abstractions.Services;
-using System;
+using System.Linq;
 
 namespace Cinq.RentCar.Services
 {
@@ -30,7 +30,10 @@ namespace Cinq.RentCar.Services
 
         public ICar[] GetAvailableCars()
         {
-            return _repo.GetAvailableCars();
+            var rented = _repo.GetRentedCars();
+            var all = _repo.GetAllCars();
+
+            return all.Where(q => !rented.Contains(q)).ToArray();
         }
 
         public IBook[] GetReservations()
