@@ -1,4 +1,5 @@
-﻿using Cinq.RentCar.Abstractions.Services;
+﻿using Cinq.RentCar.Abstractions.Entities;
+using Cinq.RentCar.Abstractions.Services;
 using Cinq.RentCar.Controllers.Controllers;
 using Cinq.RentCar.Repositories;
 using Microsoft.VisualStudio.TestTools.UnitTesting;

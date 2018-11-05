@@ -1,9 +1,6 @@
 ﻿using Cinq.RentCar.Abstractions.Models;
-using System;
-using System.Collections.Generic;
-using System.Text;
 
-namespace Cinq.RentCar.Repositories
+namespace Cinq.RentCar.Abstractions.Entities
 {
     public class Driver : IDriver
     {

@@ -1,13 +1,10 @@
-﻿using Cinq.RentCar.Abstractions.Models;
+﻿using Cinq.RentCar.Abstractions.DTOs;
 using Cinq.RentCar.Abstractions.Services;
 using Microsoft.AspNetCore.Mvc;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
 
 namespace Cinq.RentCar.Controllers.Controllers
 {
+    [Route("api/[controller]")]
     public class BookController : Controller
     {
         private readonly IRentService _service;
@@ -17,7 +14,7 @@ namespace Cinq.RentCar.Controllers.Controllers
         }
 
         [HttpPost]
-        public void Post(IBook book)
+        public void Post([FromBody]BookDTO book)
         {
             _service.Book(book);
         }

@@ -2,13 +2,14 @@
 using Cinq.RentCar.Abstractions.Repositories;
 using Cinq.RentCar.Abstractions.Services;
 using Cinq.RentCar.Repositories;
+using Cinq.RentCar.Service;
 using Cinq.RentCar.Services;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Logging;
-
+using Newtonsoft.Json.Serialization;
 
 namespace Cinq.RentCar.Controllers
 {
@@ -39,11 +40,16 @@ namespace Cinq.RentCar.Controllers
             // Add framework services.
             services.AddApplicationInsightsTelemetry(Configuration);
             
-            services.AddMvc();
+            services.AddMvc().AddJsonOptions(options =>
+            {
+                options.SerializerSettings.ContractResolver =
+                    new CamelCasePropertyNamesContractResolver();
+            });
 
             services.AddScoped<IRentService, RentService>();
-            services.AddScoped<IRentRepository, RentRepository>();
+            services.AddSingleton<IRentRepository, RentRepository>();
             services.AddScoped<IRepository, Repository>();
+            services.AddScoped<IRentHelper, RentHelper>();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline

@@ -1,10 +1,10 @@
-﻿using System;
-using Cinq.RentCar.Abstractions.Repositories;
+﻿using Cinq.RentCar.Abstractions.Repositories;
 using Cinq.RentCar.Abstractions.Services;
-using Cinq.RentCar.Repositories;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 using Moq;
 using System.Linq;
+using Cinq.RentCar.Abstractions.Entities;
+using Cinq.RentCar.Abstractions.DTOs;
 
 namespace Cinq.RentCar.Services.Test
 {
@@ -12,21 +12,25 @@ namespace Cinq.RentCar.Services.Test
     public class RentServiceTest
     {
         private readonly Mock<IRentRepository> _repo;
+        private readonly Mock<IRentHelper> _helper;
         private readonly IRentService _service;
 
         public RentServiceTest()
         {
             _repo = new Mock<IRentRepository>();
-            _service = new RentService(_repo.Object);
+            _helper = new Mock<IRentHelper>();
+            _service = new RentService(_repo.Object, _helper.Object);
         }
 
         [TestMethod]
         public void service_should_create_book()
         {
-            var rent = new Book();
+            var rent = new BookDTO();
+            var entity = new Book();
+            _helper.Setup(q => q.GetBookEntity(rent)).Returns(entity);
             _service.Book(rent);
 
-            _repo.Verify(q => q.Book(rent), Times.Once);
+            _repo.Verify(q => q.Book(entity), Times.Once);
         }
 
         [TestMethod]

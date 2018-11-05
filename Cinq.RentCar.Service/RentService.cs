@@ -1,4 +1,6 @@
-﻿using Cinq.RentCar.Abstractions.Models;
+﻿using Cinq.RentCar.Abstractions.DTOs;
+using Cinq.RentCar.Abstractions.Entities;
+using Cinq.RentCar.Abstractions.Models;
 using Cinq.RentCar.Abstractions.Repositories;
 using Cinq.RentCar.Abstractions.Services;
 using System.Linq;
@@ -8,14 +10,18 @@ namespace Cinq.RentCar.Services
     public class RentService : IRentService
     {
         private readonly IRentRepository _repo;
-        public RentService(IRentRepository repo)
+        private readonly IRentHelper _helper;
+
+        public RentService(IRentRepository repo, IRentHelper helper)
         {
             _repo = repo;
+            _helper = helper;
         }
 
-        public void Book(IBook rent)
+        public void Book(BookDTO rent)
         {
-            _repo.Book(rent);
+            var entity = _helper.GetBookEntity(rent);
+            _repo.Book(entity);
         }
 
         public void CancelReservation(string bookReferenceNumber)

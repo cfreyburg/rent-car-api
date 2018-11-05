@@ -1,6 +1,7 @@
+using Cinq.RentCar.Abstractions.DTOs;
+using Cinq.RentCar.Abstractions.Entities;
 using Cinq.RentCar.Abstractions.Services;
 using Cinq.RentCar.Controllers.Controllers;
-using Cinq.RentCar.Repositories;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 using Moq;
 
@@ -21,7 +22,7 @@ namespace Cinq.RentCar.Controllers.Test
         [TestMethod]
         public void controller_should_save()
         {
-            var book = new Book();
+            var book = new BookDTO();
             _controller.Post(book);
 
             _service.Verify(q => q.Book(book), Times.Once);

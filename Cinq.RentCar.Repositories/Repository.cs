@@ -1,7 +1,6 @@
-﻿using Cinq.RentCar.Abstractions.Models;
-using System;
+﻿using Cinq.RentCar.Abstractions.Entities;
+using Cinq.RentCar.Abstractions.Models;
 using System.Collections.Generic;
-using System.Text;
 
 namespace Cinq.RentCar.Repositories
 {
