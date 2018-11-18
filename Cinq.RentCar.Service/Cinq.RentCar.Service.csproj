@@ -43,6 +43,7 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="RentHelper.cs" />
     <Compile Include="RentService.cs" />
+    <Compile Include="RentValidationHelper.cs" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\Cinq.RentCar.Abstractions\Cinq.RentCar.Abstractions.csproj">

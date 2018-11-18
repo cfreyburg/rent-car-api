@@ -1,6 +1,8 @@
 ﻿using Cinq.RentCar.Abstractions.DTOs;
 using Cinq.RentCar.Abstractions.Services;
 using Microsoft.AspNetCore.Mvc;
+using System;
+using static Cinq.RentCar.Abstractions.Exceptions.RentExceptions;
 
 namespace Cinq.RentCar.Controllers.Controllers
 {
@@ -13,16 +15,52 @@ namespace Cinq.RentCar.Controllers.Controllers
             _service = service;
         }
 
+        //TODO create global filter for handling exceptions
+
         [HttpPost]
-        public void Post([FromBody]BookDTO book)
+        public IActionResult Post([FromBody]BookDTO book)
         {
-            _service.Book(book);
+            try
+            {
+                _service.Book(book);
+            }
+            catch (RentBadRequest e)
+            {
+                return e.Result;
+            }
+            catch (RentNotFound e)
+            {
+                return e.Result;
+            }
+            catch (Exception e)
+            {
+                return StatusCode(500, e);
+            }
+
+            return new OkResult();
         }
 
         [HttpDelete("{referenceNumber}/cancel")]
-        public void Delete(string referenceNumber)
+        public IActionResult Delete(string referenceNumber)
         {
-            _service.CancelReservation(referenceNumber);
+            try
+            {
+                _service.CancelReservation(referenceNumber);
+            }
+            catch (RentBadRequest e)
+            {
+                return e.Result;
+            }
+            catch (RentNotFound e)
+            {
+                return e.Result;
+            }
+            catch (Exception e)
+            {
+                return StatusCode(500, e);
+            }
+
+            return new OkResult();
         }
     }
 }

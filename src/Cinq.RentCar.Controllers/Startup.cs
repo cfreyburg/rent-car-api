@@ -50,6 +50,7 @@ namespace Cinq.RentCar.Controllers
             services.AddSingleton<IRentRepository, RentRepository>();
             services.AddScoped<IRepository, Repository>();
             services.AddScoped<IRentHelper, RentHelper>();
+            services.AddScoped<IRentValidationHelper, RentValidationHelper>();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline

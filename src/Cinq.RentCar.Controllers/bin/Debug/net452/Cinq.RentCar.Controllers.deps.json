@@ -53,6 +53,7 @@
           "System.Data": "4.0.0.0",
           "System.Drawing": "4.0.0.0",
           "System.IO.Compression.FileSystem": "4.0.0.0",
+          "System.Net.Http": "4.0.0.0",
           "System.Numerics": "4.0.0.0",
           "System.Collections.Concurrent.Reference": "0.0.0.0",
           "System.Collections.Reference": "0.0.0.0",
@@ -173,6 +174,11 @@
       "System.IO.Compression.FileSystem/4.0.0.0": {
         "compile": {
           ".NETFramework/v4.5.2/System.IO.Compression.FileSystem.dll": {}
+        }
+      },
+      "System.Net.Http/4.0.0.0": {
+        "compile": {
+          ".NETFramework/v4.5.2/System.Net.Http.dll": {}
         }
       },
       "System.Numerics/4.0.0.0": {
@@ -1372,6 +1378,7 @@
           "System.Data": "4.0.0.0",
           "System.Drawing": "4.0.0.0",
           "System.IO.Compression.FileSystem": "4.0.0.0",
+          "System.Net.Http": "4.0.0.0",
           "System.Numerics": "4.0.0.0",
           "System.Collections.Concurrent.Reference": "0.0.0.0",
           "System.Collections.Reference": "0.0.0.0",
@@ -3211,6 +3218,11 @@
       "sha512": ""
     },
     "System.IO.Compression.FileSystem/4.0.0.0": {
+      "type": "referenceassembly",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "System.Net.Http/4.0.0.0": {
       "type": "referenceassembly",
       "serviceable": false,
       "sha512": ""

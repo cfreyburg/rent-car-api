@@ -1,0 +1,22 @@
+http://localhost:57499/api/book
+
+{ 
+	"BookReference" : "123", 
+	"PickupDate":"2018-02-02", 
+	"DropoffDate":"2018-03-03", 
+	"Car": {
+		"Year" : "2017", 
+		"Model": "Spark", 
+		"Category":"Economy"
+	},
+	"Driver": {
+			"FirstName": "ze", 
+			"LastName":"da silva", 
+			"Age":"30"
+	},
+	"HasAgeExtraFee":"false"
+}
+
+
+
+http://localhost:57499/api/book/123/cancel

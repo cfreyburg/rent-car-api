@@ -11,21 +11,28 @@ namespace Cinq.RentCar.Services
     {
         private readonly IRentRepository _repo;
         private readonly IRentHelper _helper;
+        private readonly IRentValidationHelper _validation;
 
-        public RentService(IRentRepository repo, IRentHelper helper)
+
+        public RentService(IRentRepository repo, IRentHelper helper, IRentValidationHelper validation)
         {
             _repo = repo;
             _helper = helper;
+            _validation = validation;
         }
 
         public void Book(BookDTO rent)
         {
+            _validation.ValidateBook(rent);
+
             var entity = _helper.GetBookEntity(rent);
             _repo.Book(entity);
         }
 
         public void CancelReservation(string bookReferenceNumber)
         {
+            _validation.ValidateDelete(bookReferenceNumber);
+
             _repo.CancelReservation(bookReferenceNumber);
         }
 

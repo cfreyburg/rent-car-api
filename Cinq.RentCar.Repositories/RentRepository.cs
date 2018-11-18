@@ -21,8 +21,6 @@ namespace Cinq.RentCar.Repositories
         public void CancelReservation(string bookReferenceNumber)
         {
             var reservation = FindReservation(bookReferenceNumber);
-            if (reservation == null)
-                throw new Exception("No reservation with this reference number");
             _repository.Books.Remove(reservation);
         }
 

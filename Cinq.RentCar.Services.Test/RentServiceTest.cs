@@ -5,6 +5,7 @@ using Moq;
 using System.Linq;
 using Cinq.RentCar.Abstractions.Entities;
 using Cinq.RentCar.Abstractions.DTOs;
+using Cinq.RentCar.Abstractions.Exceptions;
 
 namespace Cinq.RentCar.Services.Test
 {
@@ -13,13 +14,15 @@ namespace Cinq.RentCar.Services.Test
     {
         private readonly Mock<IRentRepository> _repo;
         private readonly Mock<IRentHelper> _helper;
+        private readonly Mock<IRentValidationHelper> _validation;
         private readonly IRentService _service;
 
         public RentServiceTest()
         {
             _repo = new Mock<IRentRepository>();
             _helper = new Mock<IRentHelper>();
-            _service = new RentService(_repo.Object, _helper.Object);
+            _validation = new Mock<IRentValidationHelper>();
+            _service = new RentService(_repo.Object, _helper.Object, _validation.Object);
         }
 
         [TestMethod]
